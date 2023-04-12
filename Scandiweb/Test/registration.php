@@ -7,3 +7,4 @@ use Magento\Framework\Component\ComponentRegistrar;
     'Scandiweb_Test',
     __DIR__
 );
+
