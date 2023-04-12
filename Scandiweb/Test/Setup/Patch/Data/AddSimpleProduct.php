@@ -85,16 +85,15 @@ class AddSimpleProduct implements DataPatchInterface
      * @param CategoryLinkManagementInterface $categoryLink
      */
     public function __construct(
-        ProductInterfaceFactory         $productInterfaceFactory,
-        ProductRepositoryInterface      $productRepository,
-        State                           $appState,
-        StoreManagerInterface           $storeManager,
-        EavSetup                        $eavSetup,
-        SourceItemInterfaceFactory      $sourceItemFactory,
-        SourceItemsSaveInterface        $sourceItemsSaveInterface,
+        ProductInterfaceFactory $productInterfaceFactory,
+        ProductRepositoryInterface $productRepository,
+        State $appState,
+        StoreManagerInterface $storeManager,
+        EavSetup $eavSetup,
+        SourceItemInterfaceFactory $sourceItemFactory,
+        SourceItemsSaveInterface $sourceItemsSaveInterface,
         CategoryLinkManagementInterface $categoryLink
-    )
-    {
+    ) {
         $this->appState = $appState;
         $this->productInterfaceFactory = $productInterfaceFactory;
         $this->productRepository = $productRepository;
@@ -115,13 +114,13 @@ class AddSimpleProduct implements DataPatchInterface
     }
 
     /**
-     * @throws CouldNotSaveException
+     * @return void
      * @throws InputException
      * @throws LocalizedException
      * @throws NoSuchEntityException
      * @throws ValidationException
      *
-     * @return void
+     * @throws CouldNotSaveException
      */
     public function execute(): void
     {
@@ -173,5 +172,3 @@ class AddSimpleProduct implements DataPatchInterface
         return [];
     }
 }
-
-
