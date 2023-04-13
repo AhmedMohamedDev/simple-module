@@ -104,7 +104,6 @@ class AddSimpleProduct implements DataPatchInterface
         $this->categoryLink = $categoryLink;
     }
 
-
     /**
      * @return void
      */
