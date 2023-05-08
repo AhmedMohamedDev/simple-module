@@ -118,7 +118,6 @@ class AddSimpleProduct implements DataPatchInterface
      * @throws LocalizedException
      * @throws NoSuchEntityException
      * @throws ValidationException
-     *
      * @throws CouldNotSaveException
      */
     public function execute(): void
